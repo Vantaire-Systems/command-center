@@ -10,7 +10,7 @@ export const COMPANY = {
 
 // ── QUICK LAUNCH LINKS ──
 export const QUICK_LINKS = [
-  { label: "Canopy / GreenTrellis", url: "https://canopy.vantairesystems.com", icon: "🌿", desc: "Cannabis POS — #1 PRIORITY" },
+  { label: "Hive", url: "https://pos.hive.vantairesystems.com", icon: "🌿", desc: "Alternative Retail POS — #1 PRIORITY" },
   { label: "Vantaire.com",          url: "https://vantairesystems.com",             icon: "🏠", desc: "Company landing page" },
   { label: "VantaDash",             url: "https://vantadash.vantairesystems.com",  icon: "📊", desc: "Business intelligence platform" },
   { label: "ReplyRadar",            url: "https://replyradar.vantairesystems.com", icon: "🔍", desc: "Social media monitoring" },
@@ -21,19 +21,19 @@ export const QUICK_LINKS = [
 ]
 
 // ── PRODUCTS ──
-// NOTE: Canopy/GreenTrellis is the #1 priority. Order matters.
+// NOTE: Hive/GreenTrellis is the #1 priority. Order matters.
 export const PRODUCTS = [
   {
-    id: "greentrellis",
-    name: "Canopy / GreenTrellis",
+    id: "hive",
+    name: "Hive",
     icon: "🌿",
     color: "#22c55e",
     tag: "FLAGSHIP",
-    url: "https://canopy.vantairesystems.com",
-    domain: "canopy.vantairesystems.com",
+    url: "https://pos.hive.vantairesystems.com",
+    domain: "pos.hive.vantairesystems.com",
     status: "development",
     stage: "2-Week Sprint — BUILD",
-    description: "Point-of-sale and compliance platform for Oklahoma cannabis dispensaries. Built on OpenTHC POS. This is the #1 priority — 2-week sprint in progress.",
+    description: "Point-of-sale and compliance platform for alternative retail. Built on OpenTHC POS. This is the #1 priority — 2-week sprint in progress.",
     metrics: { mrr: 0, subscribers: 0, freeUsers: 0, paidUsers: 0 },
     features: {
       implemented: ["POS demo page", "OMMA compliance framework", "Metrc API integration"],
@@ -107,7 +107,7 @@ export const PRODUCTS = [
 
 // ── SPRINT DATA ──
 export const SPRINT = {
-  name: "Canopy / GreenTrellis Build Sprint",
+  name: "Hive Build Sprint",
   startDate: "2026-06-02",
   endDate: "2026-06-16",
   currentDay: 1,
@@ -148,7 +148,7 @@ export const ROBLOX_GAMES = [
 export const DOMAINS = [
   { domain: "vantairesystems.com",              type: "A/AAAA", target: "GitHub Pages",               status: "active",  desc: "Main company landing page" },
   { domain: "www.vantairesystems.com",           type: "CNAME",  target: "vantaire-systems.github.io", status: "active",  desc: "www redirect" },
-  { domain: "canopy.vantairesystems.com",       type: "CNAME",  target: "chippa88.github.io",         status: "active",  desc: "Canopy / GreenTrellis — #1 PRIORITY" },
+  { domain: "pos.hive.vantairesystems.com",       type: "CNAME",  target: "chippa88.github.io",         status: "active",  desc: "Hive — #1 PRIORITY" },
   { domain: "vantadash.vantairesystems.com",     type: "ALIAS",  target: "vantaire-systems.github.io", status: "active",  desc: "VantaDash SaaS app" },
   { domain: "replyradar.vantairesystems.com",   type: "CNAME",  target: "chippa88.github.io",         status: "active",  desc: "ReplyRadar product" },
   { domain: "specter.vantairesystems.com",      type: "CNAME",  target: "chippa88.github.io",         status: "active",  desc: "Specter product" },
@@ -172,10 +172,10 @@ export const FINANCIALS = {
     { name: "OpenRouter",   amount: 0,  desc: "AI model API calls" },
   ],
   pricing: {
-    greentrellis: [
+    hive: [
       { tier: "Seed",    price: 99,  desc: "Single location, basic POS" },
       { tier: "Grove",   price: 199, desc: "Multi-location + advanced reporting" },
-      { tier: "Canopy",  price: 299, desc: "Enterprise + API access + priority support" },
+      { tier: "Hive",  price: 299, desc: "Enterprise + API access + priority support" },
     ],
   },
 }
@@ -205,7 +205,7 @@ export const INFRASTRUCTURE = {
 // ── OPERATIONS ──
 export const AGENTS = [
   { id: "lynnix",       name: "Lynnix",       role: "Primary Agent — Strategy, building, and coordination. Reports to James.",              status: "active" },
-  { id: "builder",       name: "Builder",       role: "Implementation — Writes code, builds features. On deck for Canopy sprint.",         status: "active" },
+  { id: "builder",       name: "Builder",       role: "Implementation — Writes code, builds features. On deck for Hive sprint.",         status: "active" },
   { id: "reviewer",      name: "Reviewer",      role: "Code Review — Checks code quality and security. On deck for Day 11-12.",           status: "active" },
   { id: "qa",            name: "QA",            role: "Quality Assurance — Tests and finds bugs. On deck for Day 11-12.",                  status: "active" },
   { id: "orchestrator",  name: "Orchestrator",  role: "Mission Dispatch — Plans and delegates multi-step projects.",                       status: "active" },
@@ -213,14 +213,14 @@ export const AGENTS = [
 ]
 
 export const CRON_JOBS = [
-  { name: "Canopy Sprint Check",        schedule: "Daily",    status: "active", lastRun: "2026-06-02", desc: "Verify sprint progress, update Command Center" },
+  { name: "Hive Sprint Check",        schedule: "Daily",    status: "active", lastRun: "2026-06-02", desc: "Verify sprint progress, update Command Center" },
   { name: "OMMA Rule Monitor",          schedule: "Weekly",   status: "active", lastRun: "2026-06-01", desc: "Check for OMMA regulation changes" },
   { name: "OK Dispensary Market Scan",  schedule: "Weekly",   status: "active", lastRun: "2026-06-02", desc: "Monitor OK dispensary openings, closures, competitor moves" },
 ]
 
 export const RECENT_ACTIVITY = [
   { date: "2026-06-02", action: "Command Center v2 deployed — added project tracking + CEO dashboard", icon: "🚀" },
-  { date: "2026-06-02", action: "Canopy/GreenTrellis 2-week sprint — DAY 1 started", icon: "🌿" },
+  { date: "2026-06-02", action: "Hive/GreenTrellis 2-week sprint — DAY 1 started", icon: "🌿" },
   { date: "2026-06-02", action: "Vantaire OS directory structure created (00-08)", icon: "📁" },
   { date: "2026-06-02", action: "Command Center v1 deployed with Quick Launch bar", icon: "✅" },
   { date: "2026-06-02", action: "8 Roblox games — 2-pass bug check: 0 issues", icon: "🎮" },
