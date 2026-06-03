@@ -19,8 +19,19 @@
 
 **Sprint Start:** June 2, 2026
 **Sprint End:** June 16, 2026 (2 weeks)
-**Status:** DAY 1 — KICK OFF
+**Status:** DAY 1 — PLANNING COMPLETE, BUILD STARTS NOW
 **Goal:** Demo-ready POS system for Oklahoma cannabis dispensaries
+
+### Pre-Sprint Complete
+- [x] Sprint plan created (14 days, 14 phases, ~70 tasks)
+- [x] Command Center v3 deployed with sprint tracker
+- [x] GitHub repos created (greentrellis + canopy)
+- [x] Vantaire OS directory structure created
+- [x] OpenTHC POS confirmed as foundation
+
+### Blockers (need James)
+- [ ] Metrc sandbox API credentials — request at https://metrc.com/sandbox
+- [ ] Grove/Grand Lake dispensary contact info for first demo
 
 ### Sprint Progress
 
