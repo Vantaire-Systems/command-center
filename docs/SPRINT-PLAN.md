@@ -18,19 +18,38 @@
 
 ---
 
-## DAY 1 — Foundation (June 2)
+## DAY 1 — Foundation (June 2) — COMPLETE
 
 **Goal:** Docker environment + OpenTHC POS installed and running
 
 ### Tasks
-- [ ] Install Docker + Docker Compose on dev machine
-- [ ] Clone OpenTHC POS: `github.com/openthc/pos`
-- [ ] Initialize submodules: `openthc/common`, `openthc/cre-adapter`
-- [ ] Set up MySQL/MariaDB via Docker
-- [ ] Configure `.env` with database credentials
-- [ ] Run `composer install`
-- [ ] Verify OpenTHC POS loads in browser
-- [ ] Document setup in `docs/SETUP.md`
+- [x] Install Docker + Docker Compose on dev machine — already installed
+- [x] Clone OpenTHC POS: `github.com/openthc/pos` — cloned to openthc-pos/
+- [x] Initialize submodules — none, dependencies via Composer
+- [x] Set up PostgreSQL via Docker — running on port 5432
+- [x] Configure `.env` with database credentials — config.php created
+- [x] Run `composer install` — 92 packages installed
+- [x] Verify OpenTHC POS loads in browser — 200 OK, /auth page loads
+- [ ] Document setup in `docs/SETUP.md` — pending
+
+### PIVOT DECISION
+OpenTHC POS requires a database schema that is NOT included in the repo — it comes from the CRE (Compliance Reporting Engine) adapter which is a separate service. Setting up the full OpenTHC ecosystem (CRE, SSO, etc.) would take days.
+
+**New approach:** Build GreenTrellis POS from scratch using:
+- React frontend (consistent with Vantaire design system)
+- PHP/Slim API backend (familiar stack)
+- PostgreSQL database (already running)
+- Docker for local development
+
+This gives us full control over the codebase, schema, and feature set. We build exactly what Oklahoma dispensaries need — no bloat.
+
+### Updated Day 1 Tasks (Pivot)
+- [x] Docker + PostgreSQL running
+- [x] Composer dependencies installed
+- [ ] Create GreenTrellis project structure
+- [ ] Design database schema (products, inventory, customers, transactions, compliance)
+- [ ] Build API backend (PHP/Slim)
+- [ ] Build POS frontend (React)
 
 ### Dockerfile (starter)
 ```yaml
